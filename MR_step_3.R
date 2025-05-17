@@ -110,7 +110,7 @@ munge_proxies <- function(LDLink_file, outcome, outcome_clump){
 
 ##########exposure_formatting and ld clumping#############################################
 
-exposure_path = "D:/final project/project work/exposure processing/mibiogen_exposure.csv"
+exposure_path = "your/path/to//mibiogen_exposure.csv"
 exposure_ss <- fread(exposure_path, header = TRUE, sep = ",")
 
 exposure_formatted <- exposure_ss %>%
@@ -242,7 +242,7 @@ coltypes <- cols(
   pval = col_double(),
   nearest_genes = col_character()
 )
-outcome_path = "E:/try/summary_stats_release_finngen_R12_G6_ALS"
+outcome_path = "your/path/to/disease/stats"
 outcome_ss <- read_tsv(outcome_path, comment = "##", col_types = coltypes, 
                        col_select = c(rsids, `#chrom`, pos, ref, alt, af_alt, beta, sebeta, pval, nearest_genes))
 
@@ -347,7 +347,7 @@ Sys.sleep(10)
 ########################merging the proxy snps#####################################
 
 # Define the folder path
-folder_path <- "D:/final project/project work/multiple sclerosis/data"
+folder_path <- "your/project/path/data"
 
 # List all matching files inside the "data" folder
 files <- list.files(path = folder_path, pattern = "exposure_outcome_proxy_snps_.*\\.txt", full.names = TRUE)
@@ -460,7 +460,7 @@ for (method_name in unique(all_res$method)) {
 ####################################bacteria ma######################################
 
 # Load the bac_map file once
-bac_map <- read.csv("D:/final project/project work/exposure processing/mibiogen_exposure.csv")
+bac_map <- read.csv("your/path/to//mibiogen_exposure.csv")
 
 # Create SNP-to-bac mapping
 rsid_to_bac <- bac_map %>%
