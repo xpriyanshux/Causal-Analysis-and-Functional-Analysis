@@ -14,10 +14,10 @@ library(gt)
 library(stringr)
 
 ######################################genus########################################################
-output_dir <- "E:/try/MS_MIBIOGEN/exposure"
+output_dir <- "your/path/to/miobiogen"
 
 # List all TSV files in your folder
-file_list <- list.files(path = "E:/try/mibiogen/genus", pattern = "*.txt", full.names = TRUE)
+file_list <- list.files(path = "your/path/to/miobiogen/genus", pattern = "*.txt", full.names = TRUE)
 total_files <- length(file_list)
 
 # Set your p-value threshold
@@ -168,7 +168,7 @@ print("Processing complete genus   HWAAAAHHHHHAHAHHAHAH!")
 output_dir <- "E:/try/MS_MIBIOGEN/exposure"
 
 # List all TSV files in your folder
-file_list <- list.files(path = "E:/try/mibiogen/order", pattern = "*.txt", full.names = TRUE)
+file_list <- list.files(path = "your/path/to/miobiogen/order", pattern = "*.txt", full.names = TRUE)
 total_files <- length(file_list)
 
 # Set your p-value threshold
@@ -319,7 +319,7 @@ print("Processing complete order   HWAAAAHHHHHAHAHHAHAH!")
 output_dir <- "E:/try/MS_MIBIOGEN/exposure"
 
 # List all TSV files in your folder
-file_list <- list.files(path = "E:/try/mibiogen/phyla", pattern = "*.txt", full.names = TRUE)
+file_list <- list.files(path = "your/path/to/miobiogen/phyla", pattern = "*.txt", full.names = TRUE)
 total_files <- length(file_list)
 
 # Set your p-value threshold
@@ -468,7 +468,7 @@ print("Processing complete phyla HWAAAAHHHHHAHAHHAHAH!")
 output_dir <- "E:/try/MS_MIBIOGEN/exposure"
 
 # List all TSV files in your folder
-file_list <- list.files(path = "E:/try/mibiogen/class", pattern = "*.txt", full.names = TRUE)
+file_list <- list.files(path = "your/path/to/miobiogen/class", pattern = "*.txt", full.names = TRUE)
 total_files <- length(file_list)
 
 # Set your p-value threshold
@@ -618,7 +618,7 @@ print("Processing complete class HWAAAAHHHHHAHAHHAHAH!")
 output_dir <- "E:/try/MS_MIBIOGEN/exposure"
 
 # List all TSV files in your folder
-file_list <- list.files(path = "E:/try/mibiogen/family", pattern = "*.txt", full.names = TRUE)
+file_list <- list.files(path = "your/path/to/miobiogen/family", pattern = "*.txt", full.names = TRUE)
 total_files <- length(file_list)
 
 # Set your p-value threshold
