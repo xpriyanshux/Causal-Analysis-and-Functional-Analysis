@@ -2,8 +2,8 @@
 library(dplyr)
 
 # Set the directory containing your files
-input_dir <- "E:/try/MS_MIBIOGEN/exposure"
-output_dir <- "E:/try/MS_MIBIOGEN/exposure_final"  # You can use input_dir if you want to overwrite
+input_dir <- "your/path/to/miobiogen/exposure"
+output_dir <- "your/path/to/miobiogen/exposure_final"  # You can use input_dir if you want to overwrite
 
 # Ensure output directory exists
 if (!dir.exists(output_dir)) dir.create(output_dir)
@@ -57,14 +57,9 @@ updated_files <- lapply(file_list, process_file)
 
 print("Processing complete. Updated files saved in the output directory.")
 #######################################################################################################
-############################################
-########################################################################################################
-
-# Load necessary library
-library(dplyr)
 
 # Set the directory path containing CSV files
-input_dir <- "E:/try/MS_MIBIOGEN/exposure_final"   # Change this to your folder path
+input_dir <- "your/path/to/miobiogen/exposure_final"   # Change this to your folder path
 
 # List all CSV files in the directory
 csv_files <- list.files(path = input_dir, pattern = "*.csv", full.names = TRUE)
@@ -77,7 +72,6 @@ write.csv(merged_data, "merged_output.csv", row.names = FALSE)
 
 print("Merging complete! Check merged_output.csv")
 ################################################################################################
-library(dplyr)
 
 # Load your data (assuming it's a CSV file)
 df <- read.csv("merged_output.csv", stringsAsFactors = FALSE)
